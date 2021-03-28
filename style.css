@@ -1,0 +1,33 @@
+body {
+  height:100%;
+  margin: 10px 50px 50px;
+  background: linear-gradient(45deg, #175f48,#36ce9e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h6 {
+  color: white;
+  margin: 15px 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#title {
+  font-size: 34px;
+  color: white;
+}
+  
+#preview {
+  width: auto;
+  padding: 10px 20px;
+  background-color: white;  
+}
+
+textarea, #preview {
+  border-radius: 5px;
+  min-height: 300px;
+}
