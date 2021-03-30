@@ -36,14 +36,14 @@ class App extends React.Component {
     const {initText} = this.state;
     return(
       <div>
-        <h1 id="title" className="text-center m-5"> Markdown Previewer</h1>
-        <div className="row">
-          <div className="col-6">
-            <h6>Markdown:</h6>
-            <textarea className="form-control" id="editor"  value={initText} onChange={this.changeValue}/>
+        <h1 id="title" className="text-center"> Markdown Previewer</h1>
+        <div>
+          <div className="col">
+            <h5>Markdown</h5>
+            <textarea className="form-control" id="editor" value={initText} onChange={this.changeValue}/>
           </div>
-          <div className="col-6">
-            <h6>Preview:</h6>
+          <div className="col">
+            <h5>Preview</h5>
             <div id="preview" dangerouslySetInnerHTML={{__html: marked(initText, {breaks:true})}} />
           </div>
         </div>

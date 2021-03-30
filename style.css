@@ -1,14 +1,17 @@
 body {
   height:100%;
-  margin: 10px 50px 50px;
-  background: linear-gradient(45deg, #175f48,#36ce9e);
+  margin: 1% 8% 6%;
+  background: linear-gradient(45deg, #114736,#31cf9d);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-h6 {
+h5 {
   color: white;
-  margin: 15px 0;
+  background: linear-gradient(65deg, #f2f9ff46, #f2f9ff42);
+  border-radius: 5px 5px 0 0;
+  margin: 25px 0 0;
+  padding: 3%;
   text-align: center;
 }
 
@@ -17,8 +20,11 @@ img {
 }
 
 #title {
+  margin:5% 1.5%;
+  padding: 3%;
   font-size: 34px;
   color: white;
+  background: linear-gradient(90deg, rgba(242, 249, 255, 0.0001),rgba(255, 255, 255, 0.16), rgba(242, 249, 255, 0.0005));
 }
   
 #preview {
@@ -27,7 +33,14 @@ img {
   background-color: white;  
 }
 
-textarea, #preview {
-  border-radius: 5px;
-  min-height: 300px;
+#editor, #preview {
+  border-radius: 0 0 5px 5px;
+  min-height: 200px;
+}
+
+/* customize style for smaller devices */
+@media (max-width: 600px){
+  body{
+    margin: 1% 1% 5%;
+  }
 }
